@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* resets */
+
+:root{
+   --heading-color:#007B68;
+   --text-color: #01a088;
+
+}
+
+body{
+    background: linear-gradient(to top left, #095542, #21d5c0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* utility class */
+
+.container{
+    padding-top: 7%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 7%;
+
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    padding: 16px;
+    color: var(--heading-color);
+}
+
+h3{
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+h4{
+    color: #095542;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+p{
+    color: var(--text-color);
+    font-size: 17px;
+}
+
+/* form */
+
+form{
+    background-color: rgb(255, 255, 255);
+    height: 480px;
+    width: 430px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+
+.form-row{
+    display: flex;
+    margin-bottom: 8px;
+}
+.form-row input{
+    border: 0;
+    outline: 0;
+   height: 45px;
+   width: 300px;
+    border-radius: 25px;
+    background-color: rgb(239, 231, 231);
+    text-align: center;
+}
+
+.parameter{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 25px;
+}
+
+.icon2{
+    color: #01a088;
+    font-size: 20px;   
+    transition: 0.5s;
+    width: 30px;
+}
+
+.btn{
+    border: 0;
+    background-color: white;
+    padding-inline: 7px;
+    margin-left: 5px;
+    border-radius: 50%;
+    padding-block: 0;
+    height: 45px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color:  #01a088;
+}
+
+.btn:hover .icon2{
+    color: white;
+}
+
+.temp{
+    font-weight: 450;
+    font-size: 50px;
+}
+
+.features{
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.desc{
+    font-size: 15px;
+}
+
+.parameters{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parameters span {
+    font-weight: lighter;
+    margin-left: 3px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response</title>
+    <link href="css/response.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <form method="post" action="/">
+            <h2>Live Weather Forecast</h2>
+            <div class="form-row">
+            <input type="text" placeholder="Enter the City Name" name="cityname">
+            <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass icon2"></i></button>
+            </div>
+            <img src="<%= imgURL %>" class="weatherImg">
+            <p class="temp"><%= Temperature %>°</p>
+            <h3><%= Name %></h3>
+            <p class="desc"><%= Desc %></p>
+            <div class="form-row features">
+                <div class="parameter">
+                    <h4>Wind</h4>
+                    <!-- <i class="fa-solid fa-wind"></i> -->
+                    <p class="parameters"><%= wind %> <span> m/s</span></p>
+                </div>
+                <div class="parameter">
+                    <h4>Pressure</h4>
+                    <!-- <i class="fa-solid fa-temperature-quarter"></i> -->
+                    <p class="parameters"><%= Pressure %><span> hPa</span></p>
+                </div>
+                <div class="parameter">
+                    <h4>Humidity</h4>
+                    <!-- <i class="fa-solid fa-cloud-showers-heavy"></i> -->
+                    <p class="parameters"><%= Humidity %><span> %</span></p>
+                </div>
+            </div>
+        </form>
+    </div>
+<script src="https://kit.fontawesome.com/f82e8acf6b.js" crossorigin="anonymous"></script>   
+</body>
+</html>
